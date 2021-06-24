@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    function Header(){
+        return(
+            <div className="header">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="#"><img
+                    src="	https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                    alt="error loading" className="img-fluid"/></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarScroll">
+                <ul className="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            TV
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a className="dropdown-item" href="#">Hotstar Special</a></li>
+                            <li><a className="dropdown-item" href="#">Quix</a></li>
+                            <li><a className="dropdown-item" href="#">StarPlus</a></li>
+                            <li><a className="dropdown-item" href="#">Start Vijay</a></li>
+                            <li><a className="dropdown-item" href="#">Start Bharat</a></li>
+                            <li><a className="dropdown-item" href="#">Asianet</a></li>
+                            <li><a className="dropdown-item" href="#">Star Maa</a></li>
+                            <li><a className="dropdown-item" href="#">More...</a></li>
+                        </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Movies
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a className="dropdown-item" href="#">Action</a></li>
+                            <li><a className="dropdown-item" href="#">Bengali</a></li>
+                            <li><a className="dropdown-item" href="#">Telugu</a></li>
+                            <li><a className="dropdown-item" href="#">Malayama</a></li>
+                            <li><a className="dropdown-item" href="#">Tamil</a></li>
+                            <li><a className="dropdown-item" href="#">Marathi</a></li>
+                            <li><a className="dropdown-item" href="#">English</a></li>
+                            <li><a className="dropdown-item" href="#">Kannada</a></li>
+                        </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a className="dropdown-item" href="#">Cricket</a></li>
+                            <li><a className="dropdown-item" href="#">Tennis</a></li>
+                            <li><a className="dropdown-item" href="#">Formula 1</a></li>
+                            <li><a className="dropdown-item" href="#">Football</a></li>
+                            <li><a className="dropdown-item" href="#">Badminton</a></li>
+                            <li><a className="dropdown-item" href="#">Esports</a></li>
+                            <li><a className="dropdown-item" href="#">Martial Arts</a></li>
+                            <li><a className="dropdown-item" href="#">Hockey</a></li>
+                            <li><a className="dropdown-item" href="#">Golf</a></li>
+                            <li><a className="dropdown-item" href="#">Wrestling</a></li>
+                            <li><a className="dropdown-item" href="#">Kabbadi</a></li>
+                            <li><a className="dropdown-item" href="#">Table Tennis</a></li>
+                            <li><a className="dropdown-item" href="#">Khelo India</a></li>
+                            <li><a className="dropdown-item" href="#">Atheltics</a></li>
+                            <li><a className="dropdown-item" href="#">Formula 1</a></li>
+                            <li><a className="dropdown-item" href="#">More...</a></li>
+                        </ul>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">News <span className="sr-only">(current)</span></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Premium<span className="sr-only">(current)</span></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Disney+ <span className="sr-only">(current)</span></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Kids <br/> <span className="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form className="d-flex">
+                    <input className="form-control mr-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button className="btn btn-outline-primary btn1" type="submit">Search</button>
+                    <p className="btn btn_header">LOGIN</p>
+                </form>
+            </div>
+        </nav>
+    </div>
+        )
+    }
+    // class
+    function Content(){
+        return(
+            <div className="main_content">
+        <div className="slider">
+            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-4 col-6">
+                                    <h4>Bhaag Milkha Bhaag</h4>
+                                    <p><span>Hindi.Biopic.2013</span></p>
+                                    <p>The film chronicles Milkha Singh aka 'aka Flying Sikh's incredible struggle-from
+                                        being an orphan to becoming one of the greatest athelete'</p>
+                                </div>
+                                <div className="col-xl-8 col-6">
+                                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/old_images/MOVIE/1354/1000001354/1000001354-h"
+                                        className="d-block w-100 img-fluid" alt="error loading"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-4 col-6">
+                                    <h4>Chhichhore</h4>
+                                    <p><span>Hindi.Drama.2019</span></p>
+                                    <p>Divided by time,united by tragic incident.In a bittersweet reunioun,seven
+                                        middle-aged
+                                        friends take walk down the memory lane at the least expected place.</p>
+                                </div>
+                                <div className="col-xl-8 col-6">
+                                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1331/641331-h"
+                                        className="d-block w-100 img-fluid" alt="error loading"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-4 col-6">
+                                    <h4>Housefull 4</h4>
+                                    <p><span>Hindi.Comedy.2019</span></p>
+                                    <p>A Set of six lovers had to part ways 1419.six centuries later, they meet again
+                                        only
+                                        to realise they marrying the wrong pattern.old villain drama into a comedy error
+                                        of
+                                        errors</p>
+                                </div>
+                                <div className="col-xl-8 col-6">
+                                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3668/593668-h"
+                                        className="d-block w-100 img-fluid" alt="error loading"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div className="content">
+            <h3>Horror Movies</h3>
+            <div className="row">
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/7d/05/db/7d05db63ceb77d9e2870c6a40554a74e.jpg"
+                        alt="error loading" className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/a3/ba/6e/a3ba6ebb164fa4aeb29f3aeeed11bbca.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/2d/ff/f6/2dfff64e45acbf3a614811878239cc43.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/0d/72/9c/0d729c4c96055acf531d79d7d0b44823.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/2d/ff/f6/2dfff64e45acbf3a614811878239cc43.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/78/2b/d4/782bd4ea95b6480c2d6f70e6a3d44b73.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+            </div>
+        </div>
+        <div className="content">
+            <h3>Drama Movies</h3>
+            <div className="row">
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/65/df/0a/65df0a0d4ee36aad7f3ad85ac3d8cfaa.jpg"
+                        alt="error loading" className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/08/a4/cf/08a4cfe8311487d32f16a328ea78b5d1.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/8a/9c/08/8a9c085186387591df6f191d0fd4c469.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/d0/d3/41/d0d34116130c6f37da20dc563580e084.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/ec/b5/aa/ecb5aa2897ca763a946652cddb4a8c50.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/ec/b5/aa/ecb5aa2897ca763a946652cddb4a8c50.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+            </div>
+        </div>
+        <div className="content">
+            <h3>Comedian Movies</h3>
+            <div className="row">
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/7d/05/db/7d05db63ceb77d9e2870c6a40554a74e.jpg"
+                        alt="error loading" className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/a3/ba/6e/a3ba6ebb164fa4aeb29f3aeeed11bbca.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/df/69/13/df691393222ae485cb74887e1aa903ac.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/0d/72/9c/0d729c4c96055acf531d79d7d0b44823.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/2d/ff/f6/2dfff64e45acbf3a614811878239cc43.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+                <div className="col-xl-2 col-2">
+                    <img src="https://i.pinimg.com/236x/78/2b/d4/782bd4ea95b6480c2d6f70e6a3d44b73.jpg" alt="error loading"
+                        className="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+        )
+    }
+    function Footer(){
+        return(
+            <div className="footer">
+        <div className="container">
+            <div className="row">
+                <div className="col-xl-6 col-6">
+                    <ul>
+                        <li>About Disney+Hotstar</li>
+                        <li>Term Of Use</li>
+                        <li>Privacy Policy</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                        <li>Carrers</li>
+
+                    </ul>
+                    <p>© 2021 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming
+                        logos are service marks of, and all related programming visuals and elements are the property
+                        of, Home Box Office, Inc. All rights reserved.</p>
+                </div>
+                <div className="col-xl-3 col-3">
+                    <h5>Connect With us</h5>
+                    <i className="fa fa-facebook-square"></i>
+                    <i className="fa fa-twitter-square"></i>
+                </div>
+                <div className="col-xl-3 col-3">
+                    <h5>Disney+Hotstar App</h5>
+                    <div className="row">
+                        <div className="col-xl-6 col-6">
+                            <img src="google.jpg" alt="" className="img-fluid"/>
+                        </div>
+                        <div className="col-xl-6 col-6">
+                            <img src="apple.jpg" alt="" className="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        )
+    }
+    var data=(
+        <div>
+        <Header/>
+        <Content/>
+        <Footer/>
+        </div>
+    )
+    ReactDOM.render(data,document.getElementById("root"))
+    </script>
+</body>
+</html>
